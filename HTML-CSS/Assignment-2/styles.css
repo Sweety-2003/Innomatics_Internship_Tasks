@@ -1,0 +1,405 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    line-height: 1.6;
+}
+header{
+    background-image: url(coffee2.jpg);
+    background-size: cover;
+    height: 620px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    mix-blend-mode: screen;
+    background-color: rgba(255, 255, 255, 0.119);
+    
+}
+.logoname a {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-left: 48px; 
+    color: white;
+    text-decoration: none;
+   
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    margin-right: 48px;
+    margin-top: 17px;
+    gap: 20px;
+}
+nav li{
+    margin-left: 20px;
+  
+}
+nav ul a {
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: white;
+    padding: 7px 5px;
+}
+
+nav ul a:hover{
+    /* text-decoration: underline; */
+    /* text-decoration-color: rgb(240, 214, 139);
+    text-decoration-style: solid; */
+    background-color: #130f0f;
+    box-shadow: 2px 2px 2px 2px;
+    border-radius: 5px;
+}
+
+.heading h1{
+    font-size: 3.7rem;
+    padding-top: 30px;
+    padding-bottom: 3px;
+    text-align: center;
+    color: rgb(231, 226, 214);
+    
+}
+.heading p{
+    text-align: center;
+    font-size: 1.6rem;
+    color: white;
+}
+.heading button{
+    background-color: rgb(237, 185, 52);
+    color: black;
+    padding: 15px 30px;
+    font-size: 1.3rem;
+    border: none;
+    cursor: pointer;
+    padding: auto;
+    width: 180px;
+    font-weight: 600;
+    border-radius: 10px;
+    
+}
+#menu{
+    text-align: center;
+}
+.menu_heading {
+    padding-top: 20px;
+    font-size: 2.5rem;
+}
+.menu-items {
+    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%; /* Ensure responsiveness */
+}
+
+.menu-head{
+    background-color: rgb(245, 231, 211);
+    padding-bottom: 40px;
+}
+.coffee{
+    height: auto;
+    width: 370px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center;
+    box-sizing: border-box;
+    
+}
+.coffee img{
+    max-width: 100%;
+    height: 350px;
+    width: 350px;
+    margin-bottom: 10px;
+}
+.coffee p{
+    margin-bottom: 15px;
+    font-style: italic;
+    color: #777;
+    font-size: large;
+}
+.coffee h2{
+    margin-bottom: 10px;
+    color: #555;
+}
+.order-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.order-btn:hover {
+    background-color: #cc5500;
+}
+.coffee .price{
+    font-weight: bold;
+    color: #333;
+    font-size: large;
+}
+
+.menu-btn{
+    height: 50px;
+    width: 140px;
+    background-color: rgb(237, 185, 52);
+    font-size: larger ;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.menu-btn:hover, .heading button:hover{
+         background-color: darkgoldenrod;
+}
+.about-head{
+    /* background-color: rgb(245, 231, 211); */
+    padding-bottom: 40px;
+    background-color: rgb(255, 254, 253);
+}
+.about-us{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 1600px;
+    align-items: center;
+    padding: 20px;
+    gap: 80px;
+    justify-content: center; 
+    margin-left: 240px;
+    margin-right: 250px;
+    
+}
+.about_content{
+    flex: 1;
+    padding-right: 20px;
+}
+.about-image{
+    flex: 1;
+}
+.about-image img{
+    max-width: 100%;
+    height: 560px;
+    display: block;
+}
+.about-us p{
+    font-size: 1.7rem;
+}
+
+.contact{
+    background-color: rgb(244, 231, 214);
+    padding-bottom: 1px;
+}
+.contact h2{
+    margin-bottom: 3rem;
+    color: rgb(16, 12, 12);
+}
+.contact form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    margin: 5rem auto;
+    text-align: center;
+    width: 1500px;
+    background-color: rgb(244, 241, 241);
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 16px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    
+}
+.contact form .input_box{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 600px;
+    height:300px;
+}
+
+.contact form .input_box input,
+.contact form textarea{
+    width: 90%;
+    padding: 2.5rem;
+    font-size: 1.8rem;
+    color: white;
+    background: rgb(255, 255, 255);
+    border-radius: 2rem;
+    border: 1px solid maroon;
+    margin: 1.5rem 0;
+    resize: none;
+
+}
+.contact form .input_box input{
+    width: 500px;
+    height: 60px;
+}
+.contact form .btn{
+    margin-top: 0.6rem;
+    width: 200px;
+    height: 60px;
+    border-radius: 10px;
+    font-size:larger;
+    background-color: burlywood;
+}
+.footer{
+    background-color: rgb(133, 76, 2)
+}
+.contact-info1{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 15px;
+    color: white;
+    font-size: larger;
+}
+.contact-info2 {
+    text-align: center;
+    justify-content: center;
+    color: white;
+    font-size: large;
+}
+#msgsubmit:hover{
+    background-color:darkgoldenrod;
+}
+
+
+/*
+
+I am sorry I have some issue with these media queries so i will update it soon
+
+@media (max-width: 767px) {
+    header {
+    height: auto;
+    padding: 20px;
+    }
+    
+    .logoname a {
+    font-size: 1.5rem;
+    margin-left: 0;
+    }
+    
+    .nav-menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 0;
+    margin-top: 20px;
+    }
+    
+    .nav-menu.active {
+    display: flex;
+    }
+    
+    nav li {
+    margin-left: 0;
+    margin-bottom: 10px;
+    }
+    
+    .heading h1 {
+    font-size: 2.5rem;
+    padding-top: 20px;
+    }
+    
+    .heading p {
+    font-size: 1.2rem;
+    }
+    
+    .heading button {
+    width: 150px;
+    font-size: 1.1rem;
+    }
+    }
+    
+
+@media (max-width: 767px) {
+    .about-us {
+    flex-direction: column;
+    width: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+    }
+    
+    .about_content {
+    padding-right: 0;
+    }
+    
+    .about-image img {
+    height: auto;
+    max-width: 100%;
+    }
+    
+    .about-us p {
+    font-size: 1.4rem;
+    }
+    }
+
+@media (max-width: 767px) {
+    .contact form {
+    width: auto;
+    margin: 3rem 20px;
+    padding: 20px;
+    }
+    
+    .contact form .input_box {
+    width: auto;
+    height: auto;
+    flex-direction: column;
+    }
+    
+    .contact form .input_box input,
+    .contact form textarea {
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.4rem;
+    }
+    
+    .contact form .btn {
+    width: 100%;
+    height: 50px;
+    font-size: 1.2rem;
+    }
+    }
+
+@media screen and (max-width: 768px) {
+    footer {
+        font-size: 0.9rem;
+    }
+
+    footer .footer-content {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    footer .footer-info1 ,.footer-info2{
+        font-size: 0.8rem;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    footer {
+        font-size: 0.8rem;
+        padding: 15px 0;
+    }
+
+    footer {
+        gap: 15px;
+    }
+
+    footer .footer-info1, .footer-info2 {
+        font-size: 0.7rem;
+    }
+} */
